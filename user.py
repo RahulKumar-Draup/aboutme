@@ -36,13 +36,25 @@ class User:
         passion = str(input("Enter your passion : "))
         organisation = str(input("Enter your organisation : "))
         extra_skills = str(input("Enter your extra skills : "))
-        print("your secret key is")
+        secret_key = str(contact)[::-1]
+        print("your secret key is: ", secret_key)
         print("your details are successfully submitted")
+        y = {'name': name, 'profession': profession, 'contact': contact, 'skills': skills, 'about': about,'passion': passion,
+            'organisation':organisation,'extra_skills':extra_skills,'secretkey':secret_key}
+
+        """creating json object"""
+
+        json_obj = json.dumps(y,indent=4)
+
+        """writing content to .json file"""
+
+        with open('details.json','w') as files:
+            files.write(json_obj)
 
 
 '''A CLASS  OBJECT IS CREATED WITH ENTERED DATA'''
-
-obj = User(1)
+num = int(input())
+obj = User(num)
 print(obj)
 
 
@@ -50,18 +62,7 @@ print(obj)
 
 
 
-    #
-    #     with open('details.json','w') as f:
-    #         json.dump(data,f)
-    #
-    #     with open('details.json') as jsonfiles:
-    #         data = json.load(jsonfiles)
-    #         temp = data['user']
-    #         y = {'name':name,'profession':profession,'contact':contact,'skills':skills,'about':about,'passion':passion,
-    #              'organisation':organisation,'extra_skills':extra_skills,'secretkey':secret_key}
-    #         temp.append(y)
-    # enter_detail(data)
-    #
+
     #
     # def edit_details(self):
     #
