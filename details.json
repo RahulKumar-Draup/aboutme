@@ -1,11 +1,45 @@
-{
-    "name": "Rahul",
-    "profession": "student",
-    "contact": 123456789,
-    "skills": "things",
-    "about": "hello i am rahul",
-    "passion": "something",
-    "organisation": "it",
-    "extra_skills": "finding",
-    "secretkey": "987654321"
-}
+[
+  {
+    "name": "kamlesh",
+    "profession": "actor",
+    "contact": 83125,
+    "skills": "acting",
+    "passion": "music, dance, art",
+    "organisation": "film production",
+    "extra_skills": "dancing and singing",
+    "secret_key": "52138"
+  },
+  {
+    "name": "abhishek",
+    "profession": "professor",
+    "contact": 123445,
+    "skills": "teaching",
+    "about": "i am a teacher",
+    "passion": "reading books",
+    "organisation": "school",
+    "extra_skills": "playing",
+    "secretkey": "544321"
+  },
+  {
+    "name": "suma",
+    "profession": "geologist",
+    "contact": 78321,
+    "skills": "gps",
+    "about": "i like to travel",
+    "passion": "travellinig",
+    "organisation": "navstar",
+    "extra_skills": "finding co-ordinates",
+    "secretkey": "12387"
+  },
+  {
+    "name": "harish",
+    "profession": "manager",
+    "contact": 38752,
+    "skills": "management",
+    "about": "i am a manager",
+    "passion": "marketting",
+    "organisation": "somewhere",
+    "extra_skills": "many",
+    "secretkey": "25783"
+  }
+]
