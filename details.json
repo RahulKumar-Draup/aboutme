@@ -1,45 +1,103 @@
 [
   {
-    "name": "kamlesh",
-    "profession": "actor",
-    "contact": 83125,
-    "skills": "acting",
-    "passion": "music, dance, art",
-    "organisation": "film production",
-    "extra_skills": "dancing and singing",
-    "secret_key": "52138"
+    "name": "mukesh",
+    "profession": "dancer",
+    "contact": "903427",
+    "skills": "music",
+    "passion": "dance and music",
+    "organisation": "movie production",
+    "extra_skills": "music editing",
+    "secret_key": "724309"
   },
   {
     "name": "abhishek",
     "profession": "professor",
-    "contact": 123445,
+    "contact": "123445",
     "skills": "teaching",
-    "about": "i am a teacher",
     "passion": "reading books",
     "organisation": "school",
     "extra_skills": "playing",
-    "secretkey": "544321"
+    "secret_key": "544321"
   },
   {
     "name": "suma",
     "profession": "geologist",
-    "contact": 78321,
-    "skills": "gps",
-    "about": "i like to travel",
-    "passion": "travellinig",
-    "organisation": "navstar",
-    "extra_skills": "finding co-ordinates",
-    "secretkey": "12387"
+    "contact": "78321",
+    "skills": "traavelling",
+    "passion": "glonass",
+    "organisation": "finding co ordinates",
+    "extra_skills": "gps",
+    "secret_key": "12387"
   },
   {
     "name": "harish",
     "profession": "manager",
-    "contact": 38752,
+    "contact": "38752",
     "skills": "management",
-    "about": "i am a manager",
     "passion": "marketting",
     "organisation": "somewhere",
     "extra_skills": "many",
-    "secretkey": "25783"
+    "secret_key": "25783"
+  },
+  {
+    "name": "Rajesh",
+    "profession": "manager",
+    "contact": "387521",
+    "skills": "management",
+    "passion": "product designing",
+    "organisation": "comapny",
+    "extra_skills": "record keeping",
+    "secret_key": "125783"
+  },
+  {
+    "name": "Navin",
+    "profession": "biotech",
+    "contact": "53986",
+    "skills": "microbiology",
+    "passion": "travelling",
+    "organisation": "robotics",
+    "extra_skills": "organic study",
+    "secret_key": "68935"
+  },
+  {
+    "name": "srikant kumar",
+    "profession": "chemical compositioner",
+    "contact": "3000921",
+    "skills": "chemical studies",
+    "passion": "writing novels",
+    "organisation": "chem comp",
+    "extra_skills": "maths",
+    "secret_key": "1290003"
+  },
+  {
+    "name": "Amit",
+    "profession": "pilot",
+    "contact": "49102",
+    "skills": "flying PLANES",
+    "passion": "flying",
+    "organisation": "air comp",
+    "extra_skills": "physics",
+    "secret_key": "20194"
+  },
+  {
+    "name": "nitin",
+    "profession": "school principal",
+    "contact": "092648",
+    "skills": "teaching",
+    "passion": "teaching ",
+    "organisation": "school",
+    "extra_skills": "playing",
+    "secret_key": "846290"
+  },
+  {
+    "name": "sanjeev",
+    "profession": "architect",
+    "contact": "632927",
+    "skills": "design structure",
+    "about": "i am an architect",
+    "passion": "designing building",
+    "organisation": "builder comp",
+    "extra_skills": "cost estimation",
+    "secret_key": "729236"
   }
 ]
