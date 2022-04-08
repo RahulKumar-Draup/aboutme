@@ -17,15 +17,11 @@ class User:
     def __init__(self, num):
         self.num = num
         if self.num == 1:
-            self.makenewentry()
+            self.make_new_entry()
         elif self.num == 2:
             self.edit_details()
         elif self.num == 3:
             self.delete_data()
-        # elif self.num == 4:
-        #     self.view_allentry()
-
-
 
     '''USER ENTERS THEIR DETAILS THROUGH HERE '''
 
@@ -43,14 +39,14 @@ class User:
         print("  "*30)
         print("your details are successfully submitted")
 
-        y = {'name': name, 'profession': profession, 'contact': contact, 'skills': skills, 'about': about, 'passion': passion,
-            'organisation': organisation, 'extra_skills': extra_skills, 'secret_key': secret_key}
+        y = {'name': name, 'profession': profession, 'contact': contact, 'skills': skills, 'about': about,
+             'passion': passion, 'organisation': organisation, 'extra_skills': extra_skills, 'secret_key': secret_key}
         # with open('details.json','w') as file:
         #
         #     json.dump(y,file)
         return y
 
-    def makenewentry(self):
+    def make_new_entry(self):
         entry = self.enter_detail()
         with open('details.json', 'r') as file:
             data = json.load(file)
@@ -59,7 +55,6 @@ class User:
         data.append(entry)
         with open('details.json', 'w') as file:
             json.dump(data, file, indent=2)
-
 
     def delete_data(self):
         key = str(input("enter your sceret key : "))
@@ -74,17 +69,14 @@ class User:
         with open('details.json', 'w') as file:
             json.dump(new, file, indent=2)
 
-
-
     def load_data(self):
         with open('details.json') as f:
             val = json.loads(f.read())
             return val
 
-
     """printing entry by each person"""
 
-    def view_allentry(self):
+    def view_all_entry(self):
         user = self.load_data()
         # print(user)
         print("-"*30+"ALL RECORDS"+"-"*30)
@@ -179,8 +171,8 @@ class User:
                 newdata['secret_key'] = person.get('secret_key')
                 new.append(newdata)
             with open('details.json', 'w') as f:
-                jsondata = json.dumps(new, indent=2)
-                f.write(jsondata)
+                json_data = json.dumps(new, indent=2)
+                f.write(json_data)
 
 
 num = int(input())
@@ -191,7 +183,7 @@ if num == 6:
 elif num == 5:
     print(obj.search_by_npc())
 elif num == 4:
-    print(obj.view_allentry())
+    print(obj.view_all_entry())
 else:
     print(obj)
 
@@ -225,4 +217,3 @@ else:
 # print('passion:', user[person].get('passion'))
 # print('organisation:', user[person].get('organisation'))
 # print('extra_skills:', user[person].get('extra_skills'))
-
